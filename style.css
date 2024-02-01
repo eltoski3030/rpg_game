@@ -6,13 +6,13 @@ body {
   background-color: rgb(125, 7, 110);
   color: #ffffff;
   font-family: fantasy;
-  font-size: 18px;
-  padding: 15px;
+  font-size: 3vw; /* Use viewport width for responsive font size */
+  padding: 2vw;
 }
 
 #game {
-  max-width: 500px;
-  max-height: 400px;
+  max-width: 80vw; /* Use viewport width for max width */
+  max-height: 60vh; /* Use viewport height for max height */
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   color: #ffffff;
@@ -44,7 +44,7 @@ button {
   cursor: pointer;
   color: #0a0a23;
   font-family: fantasy;
-  font-size: 19px;
+  font-size: 2.5vw; /* Responsive font size */
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
@@ -59,7 +59,7 @@ button {
 }
 
 .char-inv {
-  max-width: 500px;
+  max-width: 80vw; /* Responsive width */
   display: flex;
   justify-content: center;
 }
@@ -86,13 +86,30 @@ button {
   box-shadow: #000;
   top: 0;
   left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.156); /* Adjust the transparency here */
-  z-index: 1; /* Ensure the box is above the image */
+  width: 50%; /* Relative size */
+  height: 100%; /* Relative size */
+  background-color: rgba(255, 255, 255, 0.156);
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000; /* Adjust text color */
-  font-size: 24px; /* Adjust text size */
+  color: #000;
+  font-size: 3vw; /* Responsive font size */
 }
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  #text, button, .inv-box {
+    font-size: 5vw; /* Larger font size for smaller screens */
+  }
+
+  #game {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+}
+
+
+
+/* log In Styles */
+
