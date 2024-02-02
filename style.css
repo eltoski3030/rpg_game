@@ -114,18 +114,23 @@ button {
 /* log In Styles */
 #body {
   display: flex;
-  flex-wrap: wrap;
-}
-.prompt-container {
-  margin: 40% 25% 0% 25%;
-  display: flex;
   flex-direction: column;
-  height: 600px;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
   width: auto;
 }
+.prompt-container {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
 
 .button-log-in {
   margin:5px;
+  margin-top: 20px;
   border-radius: 5px;
   height: 30px;
   font-size: 15px;
@@ -133,4 +138,14 @@ button {
 .log-input {
   height: 25px;
   border-radius: 5px;
+}
+
+.login-txt{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* autenticate */
+.Autenticate {
+  display: fl;
 }
