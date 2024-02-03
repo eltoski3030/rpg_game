@@ -121,6 +121,9 @@ button {
   width: auto;
 }
 .prompt-container {
+  background-color:#0a0a23;
+  padding: 25px;
+  border-radius: 5px;
   margin-top: 20%;
   display: flex;
   flex-direction: column;
@@ -129,13 +132,14 @@ button {
 
 
 .button-log-in {
-  margin:5px;
+  margin:10px;
   margin-top: 20px;
   border-radius: 5px;
   height: 30px;
   font-size: 15px;
 }
 .log-input {
+  margin: 5px;
   height: 25px;
   border-radius: 5px;
 }
@@ -148,4 +152,14 @@ button {
 /* autenticate */
 .Autenticate {
   display: fl;
+}
+
+.prompt {
+  margin: 5px;
+}
+
+.acc-promp {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
 }
