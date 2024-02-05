@@ -12,6 +12,7 @@ const username = document.getElementById('user');
 const password = document.getElementById('password');
 const accprompt = document.getElementById("acc-promp");
 
+
 accprompt.style.display = "none";
 
 function authentication() {
@@ -26,3 +27,12 @@ function authentication() {
 }
 
 logInButton.addEventListener('click', authentication);
+
+
+function acc_create() {
+    accprompt.style.display = "block";
+    username.style.display = "none";
+    password.style.display = "none"; 
+ }
+ 
+ accountButton.addEventListener('click', acc_create);
