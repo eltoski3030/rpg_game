@@ -163,3 +163,69 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+/* Character creation */ 
+.character {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  color: rgb(255, 174, 0);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"], label {
+  color: white;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"] {
+  background-color: black;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: yellow;
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .character {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  .form {
+      width: 45%;
+  }
+}
